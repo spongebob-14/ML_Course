@@ -250,9 +250,9 @@ def ml_loop():
 
         if has_fine==0 or scene_info.ball[1]>=395:
             comm.send_instruction(scene_info.frame, PlatformAction.NONE)
-        elif scene_info.platform[0]>pred_position[0]+19:
+        elif scene_info.platform[0]>pred_position[0]+16:
             comm.send_instruction(scene_info.frame, PlatformAction.MOVE_LEFT)
-        elif scene_info.platform[0]<pred_position[0]-19:
+        elif scene_info.platform[0]<pred_position[0]-16:
             comm.send_instruction(scene_info.frame, PlatformAction.MOVE_RIGHT)
             
         # runtime
