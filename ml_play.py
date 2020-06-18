@@ -69,16 +69,16 @@ class MLPlay:
                     if x >= -105 and x < -35 :
                         if y > 80 and y < 100:
                             grid.add(3)
-                        elif y < -40 and y > -100:
+                        elif y < -60 and y > -100:
                             grid.add(9)
-                        elif y <= 80 and y >= -40:
+                        elif y <= 80 and y >= -60:
                             grid.add(6)
                     if x <= 105 and x > 35:
                         if y > 80 and y < 100:
                             grid.add(1)
-                        elif y < -40 and y > -100:
+                        elif y < -60 and y > -100:
                             grid.add(7)
-                        elif y <= 80 and y >= -40:
+                        elif y <= 80 and y >= -60:
                             grid.add(4)
             return move(grid= grid, speed_ahead = speed_ahead)
             
