@@ -104,7 +104,7 @@ class MLPlay:
             prefer=100 #default value
             if self.car_lane==0:
                 l_lowest=3000
-            elif self.car_lane==0:
+            elif self.car_lane==8:
                 r_lowest=3000
             for car in scene_info["cars_info"]:
                 if car["id"] != self.player_no:
