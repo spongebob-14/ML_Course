@@ -1,3 +1,4 @@
+# for midterm3
 viberation=0
 l_lowest=800
 r_lowest=800
