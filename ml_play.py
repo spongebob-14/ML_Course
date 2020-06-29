@@ -123,7 +123,7 @@ class MLPlay:
             
             coin_prefer=-100
             for coin in scene_info["coins"]:
-                if coin[1]<self.car_pos[1]+60 and coin[1]<self.car_pos[1]-60:
+                if coin[1]<self.car_pos[1]+60 and coin[1]<self.car_pos[1]-40:
                     if(self.car_pos[0]-20<=coin[0] and coin[0]<=self.car_pos[0]+20):
                         coin_prefer=0
                     elif (self.car_pos[0]-25-70<coin[0] and coin[0]<self.car_pos[0]-20):
